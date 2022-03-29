@@ -1,0 +1,113 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-bg: #082032;
+    --secondary-bg: #ff4c29;
+    --cl-white: #fff;
+    --transition: all 500ms ease-in-out;
+}
+
+body{
+    background: var(--primary-bg);
+    color: var(--cl-white);
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--cl-white);
+}
+
+a:hover{
+    color: var(--cl-white);
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100vw;
+    background: var(--secondary-bg);
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links a{
+    padding:0 1.5rem 0 0;
+    transition: var(--transition);
+}
+.nav_links a:hover{
+    color: var(--primary-bg);
+}
+
+
+/* intro */
+
+.header{
+    margin-top: 7rem;
+}
+
+.intro_left{
+    margin: 5rem auto 0;
+    text-align: center;
+}
+
+.intro_text p{
+    font-size: 3rem;
+}
+
+.intro_des{
+    font-size: .9rem;
+}
+
+.intro_btns{
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.intro_btns > button{
+    background: var(--secondary-bg);
+    padding: .75rem;
+    font-size: .9rem;
+    border-radius: .5rem;
+    border: none;
+    margin: auto .5rem;
+    width: 30%;
+    color: var(--cl-white);
+    box-shadow: 0 0.4rem 0.9rem rgba(255,255,255, .1);
+}
+
+.intro_btns .contact_btn{
+    background: transparent;
+    border: 1px solid white;
+}
+
+.intro_btns .contact_btn a:hover{
+    color: var(--secondary-bg);
+}
