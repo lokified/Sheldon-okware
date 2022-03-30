@@ -47,6 +47,7 @@ nav{
     height: 5rem;
     width: 100vw;
     background: var(--secondary-bg);
+    z-index: 1;
 }
 
 .nav_container{
@@ -184,7 +185,6 @@ nav{
     border-radius: 0.25rem;
     margin-bottom: 40px;
     overflow: hidden;
-    z-index: -1;
 
     transition: var(--transition)
 }
@@ -287,6 +287,148 @@ nav{
     border-radius: 0.25rem;
 }
 
+
+.view_btn{
+    border: 1px solid white;
+    background: transparent;
+    color: #fff; 
+}
+
 .btn:hover, .btn:focus {
-    background-color: gray;
+    border: 1px solid white;
+    background: transparent;
+    color: var(--secondary-bg);
+}
+
+
+/* skills */
+
+.skills_container h4{
+    margin: 5rem auto;
+    position: relative;
+    z-index: -1;
+}
+
+.skills_container h4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background: var(--secondary-bg);
+    height: 2px;
+    padding: .2rem;
+    width: 2%;
+}
+
+
+/* contact */
+
+.contacts_container{
+    background-color: transparent;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+.contact{
+    background: var(--primary-bg);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+    border: 1px solid white;
+    margin: 2rem auto 0;
+}
+
+.contact h2{
+    text-align: left;
+    margin-top: .5rem;
+}
+
+.contact_details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact_socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contact_socials a{
+    background: var(--secondary-bg);
+    border-radius: 50%;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    transition: var(--transition);
+}
+.contact_socials a:hover{
+    background: transparent;
+}
+
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 3rem;
+}
+
+.form_name{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact_form input[type="text"]{
+    width: 50%;
+}
+
+input, textarea{
+    width: 100%;
+    padding: .5rem;
+    background: var(--primary-bg);
+    color: var(--cl-white);
+    border: 1px solid var(--cl-white);
+    border-radius: .2rem;
+}
+
+.contact_form .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--cl-white);
+}
+
+.contact_form .btn:hover{
+    color: aliceblue;
+}
+
+
+#home, #about,#skills, #projects, #contact{
+    transition: var(--transition[])
+}
+
+.skill{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill_item{
+    margin: 2rem;
+}
+.skill_item img{
+    width: 10rem;
+}
+.skill_item p {
+    text-align: center;
+    font-size: .8rem;
+    margin: .8rem;
 }
