@@ -117,6 +117,11 @@ nav{
     color: var(--secondary-bg);
 }
 
+.intro_right img{
+    width: 70%;
+    text-align: center;
+    margin: 5rem 2rem 0 8rem;
+}
 
 
 /* about */
