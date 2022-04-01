@@ -461,7 +461,7 @@ nav button{
         height: fit-content;
         gap: 0;
         display: none;
-        animation: animateLinks 900ms ease;
+        animation: animateLinks 1s ease;
     }
 
     .nav_links li{
