@@ -225,19 +225,35 @@
             
             <form action="" class="contact_form">
                 <div class="form_name">
-                    <input type="text" name="First Name" placeholder="first name" required>
-                    <input type="text" name="Last Name" placeholder="last name" required>
+                    <input type="text" name="First Name" class="firstName" placeholder="first name" required>
+                    <input type="text" name="Last Name" class="lastName" placeholder="last name" required>
 
                 </div>
 
-                <input type="email" name="Email Address" placeholder="Your email" required>
-                <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                <input type="email" name="Email Address" class="email" placeholder="Your email" required>
+                <textarea name="Message" rows="7" class="message" placeholder="Message" required></textarea>
 
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button class="btn btn-primary submit">Send Message</button>
             </form>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- loader -->
+    <div class="loader">
+        <img
+          src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif"
+          alt=""
+        />
+    </div>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript">
+        (function() {
+          emailjs.init("oVp4Hsl_JglMtPPQN");
+       })();
+   </script>
+   <script src="script.js"></script>
 </body>
 </html>
