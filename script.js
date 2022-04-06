@@ -24,13 +24,15 @@ closeBtn.addEventListener('click', () => {
 
 //send email
 
-let loader = document.querySelector(".loader");
+    let loader = document.querySelector(".loader");
     let firstName = document.querySelector(".firstName");
     let lastName = document.querySelector(".lastName");
     let email = document.querySelector(".email");
     let msg = document.querySelector(".message");
     let btn = document.querySelector(".submit");
 
+
+    loader.style.display = "none";
 
 function validate() {
     
