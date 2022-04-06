@@ -445,6 +445,10 @@ nav button{
     display: none;
 }
 
+.loader{
+    display: none;
+}
+
 
 /* tablets */
 
