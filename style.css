@@ -215,7 +215,7 @@ nav{
 }
 
 #artry {
-    background-image: url(images/artry.png);
+    background-image: url(../images/artry.png);
 }
 
 .card:hover,.card:focus-within{
